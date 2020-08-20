@@ -78,17 +78,3 @@ background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAABLCAY
     width: 100px;
     height: 25px;
 }
-[contentEditable=true]:empty:not(:focus):before{
-    content:attr(data-text);
-    color:#888;
-}
-#container .loader {
-    border: 6px solid #f3f3f3; 
-    border-top: 6px solid #3498db; 
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    animation: spin 2s linear infinite;
-    margin: 0 auto;
-    line-height: 20px;
-}
