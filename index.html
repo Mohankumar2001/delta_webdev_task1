@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="myscript.js"></script>
+	<link rel="stylesheet" type="text/css" href="mystyle.css">
+	<title>Text Editor</title>
+</head>
+<body>
+	<div id="container">
+		<fieldset>
+			<button class="bold" onclick="format('bold')"></button>
+			<button class="italic" onclick="format('italic')"></button>
+			<button class="underline" onclick="format('underline')"></button>
+			<select id="input-font" class="input"  onchange="changeFont (this);">
+			    <option value="Arial">Arial</option>
+			    <option value="Helvetica">Helvetica</option>
+			    <option value="Times New Roman">Times New Roman</option>
+			    <option value="Sans serif">Sans serif</option>
+			    <option value="Courier New">Courier New</option>
+			    <option value="Verdana">Verdana</option>
+			    <option value="Georgia">Georgia</option>
+			    <option value="Palatino">Palatino</option>
+			    <option value="Garamond">Garamond</option>
+			    <option value="Comic Sans MS">Comic Sans MS</option>
+			    <option value="Arial Black">Arial Black</option>
+			    <option value="Tahoma">Tahoma</option>
+			    <option value="Comic Sans MS">Comic Sans MS</option>
+		    </select>
+			<button class="strikethrough" onclick="format( 'strikethrough');"><strikethrough></strikethrough></button>
+			<button class="align-left" onclick="format( 'justifyLeft');"><justifyLeft></justifyLeft></button>
+			<button class="align-center" onclick="format( 'justifyCenter');"><justifyCenter></justifyCenter></button>
+			<button class="align-right" onclick="format( 'justifyRight');"><justifyRight></justifyRight></button>
+			<button class="redo-apply" onclick="format( 'redo');"><redo></redo></button>
+			<button class="undo-apply" onclick="format( 'undo');"><undo></undo></button>
+			<button class="orderedlist" onclick="format('insertOrderedList');"><insertOrderedList></insertOrderedList></button>
+			<button class="unorderedlist" onclick="format('insertUnorderedList')"><insertUnorderedList></insertUnorderedList></button>    
+			<input class="color-apply" type="color" onchange="chooseColor()" id="myColor"> 
+
+		  <!-- font size start -->
+		  <select id="fontSize" onclick="changeSize()">
+		    <option value="1">1</option>      
+		    <option value="2">2</option>
+		    <option value="3">3</option>
+		    <option value="4">4</option>
+		    <option value="5">5</option>
+		    <option value="6">6</option>
+		    <option value="7">7</option>
+		    <option value="8">8</option>
+		  </select>
+		  <!-- font size end -->
+      
+        </fieldset>
+    </div>
+
+    <div id="editor1" contenteditable="true" data-text="Enter comment...."></div>
+
+</body>
+</html>
