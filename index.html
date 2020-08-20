@@ -7,7 +7,7 @@
 	<title>Text Editor</title>
 </head>
 <body>
-	<div id="container">
+	<div id="toolbar">
 		<fieldset>
 			<button class="bold" onclick="format('bold')"></button>
 			<button class="italic" onclick="format('italic')"></button>
@@ -37,23 +37,21 @@
 			<button class="unorderedlist" onclick="format('insertUnorderedList')"><insertUnorderedList></insertUnorderedList></button>    
 			<input class="color-apply" type="color" onchange="chooseColor()" id="myColor"> 
 
-		  <!-- font size start -->
-		  <select id="fontSize" onclick="changeSize()">
-		    <option value="1">1</option>      
-		    <option value="2">2</option>
-		    <option value="3">3</option>
-		    <option value="4">4</option>
-		    <option value="5">5</option>
-		    <option value="6">6</option>
-		    <option value="7">7</option>
-		    <option value="8">8</option>
-		  </select>
-		  <!-- font size end -->
+			<select id="fontSize" onclick="changeSize()">
+				<option value="1">1</option>      
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+			</select>
       
         </fieldset>
     </div>
 
-    <div id="editor1" contenteditable="true" data-text="Enter comment...."></div>
+    <div id="editor1" contenteditable="true"></div>
 
 </body>
 </html>
